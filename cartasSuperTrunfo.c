@@ -13,7 +13,7 @@ void main() {
     printf("Código da carta: ");
     scanf("%s", codigo1);
     printf("Nome da cidade: ");
-    scanf(" %s", cidade1); // Lê a linha inteira até a nova linha
+    scanf(" %s", cidade1); // O espaço antes de %s é necessário para capturar a nova linha corretamente
     printf("População: ");
     scanf("%d", &populacao1);
     printf("Área (em km²): ");
@@ -34,7 +34,7 @@ void main() {
     printf("Código da carta: ");
     scanf("%s", codigo2);
     printf("Nome da cidade: ");
-    scanf(" %s", cidade2);  // Lê a linha inteira até a nova linha
+    scanf(" %s", cidade2);  // O espaço antes de %s é necessário para capturar a nova linha corretamente
     printf("População: ");
     scanf("%d", &populacao2);
     printf("Área (em km²): ");
