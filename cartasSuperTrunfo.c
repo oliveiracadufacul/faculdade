@@ -30,11 +30,11 @@ void main() {
     // Entrada de dados para a segunda carta
     printf("\nInsira os dados da segunda carta:\n");
     printf("Estado (letra de A a H): ");
-    scanf(" %c", &estado2);
+    scanf(" %c", &estado2); // O espaço antes de %c é necessário para capturar a nova linha corretamente
     printf("Código da carta: ");
     scanf("%s", codigo2);
     printf("Nome da cidade: ");
-    scanf(" %[^\n]", cidade2);
+    scanf(" %[^\n]", cidade2);  // Lê a linha inteira até a nova linha
     printf("População: ");
     scanf("%d", &populacao2);
     printf("Área (em km²): ");
