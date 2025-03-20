@@ -6,40 +6,38 @@ void main() {
     int populacao1, populacao2, pontos1, pontos2;
     float area1, area2, pib1, pib2;
 
-    // Leitura dos dados da carta 1
-    printf("Digite os dados da Carta 1:\n");
-    printf("Estado (A-H): ");
-    scanf(" %c", &estado1);
-    printf("Código da Carta (ex: A01): ");
-    fflush(stdin);
+    // Entrada de dados para a primeira carta
+    printf("Insira os dados da primeira carta:\n");
+    printf("Estado (letra de A a H): ");
+    scanf(" %c", &estado1); // O espaço antes de %c é necessário para capturar a nova linha corretamente
+    printf("Código da carta: ");
     scanf("%s", codigo1);
-    printf("Nome da Cidade: ");
-    scanf(" %s", cidade1);
+    printf("Nome da cidade: ");
+    scanf(" %[^\n]", cidade1); // Lê a linha inteira até a nova linha
     printf("População: ");
     scanf("%d", &populacao1);
     printf("Área (em km²): ");
     scanf("%f", &area1);
     printf("PIB (em bilhões de reais): ");
     scanf("%f", &pib1);
-    printf("Número de Pontos Turísticos: ");
+    printf("Número de pontos turísticos: ");
     scanf("%d", &pontos1);
 
-    // Leitura dos dados da carta 2
-    printf("\nDigite os dados da Carta 2:\n");
-    printf("Estado (A-H): ");
+    // Entrada de dados para a segunda carta
+    printf("\nInsira os dados da segunda carta:\n");
+    printf("Estado (letra de A a H): ");
     scanf(" %c", &estado2);
-    printf("Código da Carta (ex: A01): ");
-    fflush(stdin);
-    scanf(" %s", codigo2);
-    printf("Nome da Cidade: ");
-    scanf(" %s", cidade2);
+    printf("Código da carta: ");
+    scanf("%s", codigo2);
+    printf("Nome da cidade: ");
+    scanf(" %[^\n]", cidade2);
     printf("População: ");
     scanf("%d", &populacao2);
     printf("Área (em km²): ");
     scanf("%f", &area2);
     printf("PIB (em bilhões de reais): ");
     scanf("%f", &pib2);
-    printf("Número de Pontos Turísticos: ");
+    printf("Número de pontos turísticos: ");
     scanf("%d", &pontos2);
 
     // Exibição das informações da Carta 1
