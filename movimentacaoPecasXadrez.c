@@ -4,24 +4,23 @@ void main() {
 
     // Torre
     printf("Torre:\n");
-    int i;
-    for (i = 1; i <= 5; i++) {
-        printf("Direita\n");  // A torre move 5 casas para a direita
+    for (int i = 1; i <= 5; i++) {
+        printf("Direita\n");
     }
 
     // Bispo
     printf("\nBispo:\n");
-    int j = 1;
-    while (j <= 5) {
-        printf("Cima e Direita\n");  // O bispo move 5 casas para cima e à direita
-        j++;
+    for (int j = 1; j <= 5; j++) {
+        printf("Cima\n");
+        for (int l = 1; l <= 1; l++) {
+            printf("Direita\n");
+        }
     }
 
     // Rainha
     printf("\nRainha:\n");
     int k = 1;
-    do {
-        printf("Esquerda\n");  // A rainha move 8 casas para a esquerda
-        k++;
-    } while (k <= 8);
+    for (int k = 1; k <= 8; k++) {
+        printf("Esquerda\n"); 
+    }
 }
