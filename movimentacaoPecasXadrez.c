@@ -23,4 +23,15 @@ void main() {
     for (int k = 1; k <= 8; k++) {
         printf("Esquerda\n"); 
     }
+
+    // Cavalo
+    printf("\nCavalo:\n");
+    for (int h = 1; h <= 2; h++) {
+        printf("Baixo\n");
+        if (h == 2) {
+            for (int m = 1; m <= 1; m++) {
+                printf("Esquerda\n");
+            }
+        }
+    }
 }
